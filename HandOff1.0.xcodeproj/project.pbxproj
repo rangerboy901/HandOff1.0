@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78DC282F619B0085AC07 /* HandOff1_0App.swift */; };
+		09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78DE282F619B0085AC07 /* ContentView.swift */; };
+		09BC78E1282F619D0085AC07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BC78E0282F619D0085AC07 /* Assets.xcassets */; };
+		09BC78E4282F619D0085AC07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BC78E3282F619D0085AC07 /* Preview Assets.xcassets */; };
+		09BC78EE282F619D0085AC07 /* HandOff1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78ED282F619D0085AC07 /* HandOff1_0Tests.swift */; };
+		09BC78F8282F619D0085AC07 /* HandOff1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78F7282F619D0085AC07 /* HandOff1_0UITests.swift */; };
+		09BC78FA282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09BC78EA282F619D0085AC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BC78D1282F619B0085AC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BC78D8282F619B0085AC07;
+			remoteInfo = HandOff1.0;
+		};
+		09BC78F4282F619D0085AC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BC78D1282F619B0085AC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BC78D8282F619B0085AC07;
+			remoteInfo = HandOff1.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09BC78D9282F619B0085AC07 /* HandOff1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandOff1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BC78DC282F619B0085AC07 /* HandOff1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0App.swift; sourceTree = "<group>"; };
+		09BC78DE282F619B0085AC07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		09BC78E0282F619D0085AC07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09BC78E3282F619D0085AC07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09BC78E9282F619D0085AC07 /* HandOff1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandOff1.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BC78ED282F619D0085AC07 /* HandOff1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0Tests.swift; sourceTree = "<group>"; };
+		09BC78F3282F619D0085AC07 /* HandOff1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandOff1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BC78F7282F619D0085AC07 /* HandOff1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0UITests.swift; sourceTree = "<group>"; };
+		09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09BC78D6282F619B0085AC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78E6282F619D0085AC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78F0282F619D0085AC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BC78D0282F619B0085AC07 = {
+			isa = PBXGroup;
+			children = (
+				09BC78DB282F619B0085AC07 /* HandOff1.0 */,
+				09BC78EC282F619D0085AC07 /* HandOff1.0Tests */,
+				09BC78F6282F619D0085AC07 /* HandOff1.0UITests */,
+				09BC78DA282F619B0085AC07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09BC78DA282F619B0085AC07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78D9282F619B0085AC07 /* HandOff1.0.app */,
+				09BC78E9282F619D0085AC07 /* HandOff1.0Tests.xctest */,
+				09BC78F3282F619D0085AC07 /* HandOff1.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09BC78DB282F619B0085AC07 /* HandOff1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78DC282F619B0085AC07 /* HandOff1_0App.swift */,
+				09BC78DE282F619B0085AC07 /* ContentView.swift */,
+				09BC78E0282F619D0085AC07 /* Assets.xcassets */,
+				09BC78E2282F619D0085AC07 /* Preview Content */,
+			);
+			path = HandOff1.0;
+			sourceTree = "<group>";
+		};
+		09BC78E2282F619D0085AC07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78E3282F619D0085AC07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09BC78EC282F619D0085AC07 /* HandOff1.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78ED282F619D0085AC07 /* HandOff1_0Tests.swift */,
+			);
+			path = HandOff1.0Tests;
+			sourceTree = "<group>";
+		};
+		09BC78F6282F619D0085AC07 /* HandOff1.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78F7282F619D0085AC07 /* HandOff1_0UITests.swift */,
+				09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */,
+			);
+			path = HandOff1.0UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09BC78D8282F619B0085AC07 /* HandOff1.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BC78FD282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0" */;
+			buildPhases = (
+				09BC78D5282F619B0085AC07 /* Sources */,
+				09BC78D6282F619B0085AC07 /* Frameworks */,
+				09BC78D7282F619B0085AC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandOff1.0;
+			productName = HandOff1.0;
+			productReference = 09BC78D9282F619B0085AC07 /* HandOff1.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09BC78E8282F619D0085AC07 /* HandOff1.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BC7900282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0Tests" */;
+			buildPhases = (
+				09BC78E5282F619D0085AC07 /* Sources */,
+				09BC78E6282F619D0085AC07 /* Frameworks */,
+				09BC78E7282F619D0085AC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BC78EB282F619D0085AC07 /* PBXTargetDependency */,
+			);
+			name = HandOff1.0Tests;
+			productName = HandOff1.0Tests;
+			productReference = 09BC78E9282F619D0085AC07 /* HandOff1.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09BC78F2282F619D0085AC07 /* HandOff1.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BC7903282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0UITests" */;
+			buildPhases = (
+				09BC78EF282F619D0085AC07 /* Sources */,
+				09BC78F0282F619D0085AC07 /* Frameworks */,
+				09BC78F1282F619D0085AC07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BC78F5282F619D0085AC07 /* PBXTargetDependency */,
+			);
+			name = HandOff1.0UITests;
+			productName = HandOff1.0UITests;
+			productReference = 09BC78F3282F619D0085AC07 /* HandOff1.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09BC78D1282F619B0085AC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					09BC78D8282F619B0085AC07 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					09BC78E8282F619D0085AC07 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 09BC78D8282F619B0085AC07;
+					};
+					09BC78F2282F619D0085AC07 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 09BC78D8282F619B0085AC07;
+					};
+				};
+			};
+			buildConfigurationList = 09BC78D4282F619B0085AC07 /* Build configuration list for PBXProject "HandOff1.0" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09BC78D0282F619B0085AC07;
+			productRefGroup = 09BC78DA282F619B0085AC07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09BC78D8282F619B0085AC07 /* HandOff1.0 */,
+				09BC78E8282F619D0085AC07 /* HandOff1.0Tests */,
+				09BC78F2282F619D0085AC07 /* HandOff1.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09BC78D7282F619B0085AC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BC78E4282F619D0085AC07 /* Preview Assets.xcassets in Resources */,
+				09BC78E1282F619D0085AC07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78E7282F619D0085AC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78F1282F619D0085AC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09BC78D5282F619B0085AC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
+				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78E5282F619D0085AC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BC78EE282F619D0085AC07 /* HandOff1_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BC78EF282F619D0085AC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BC78FA282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift in Sources */,
+				09BC78F8282F619D0085AC07 /* HandOff1_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09BC78EB282F619D0085AC07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BC78D8282F619B0085AC07 /* HandOff1.0 */;
+			targetProxy = 09BC78EA282F619D0085AC07 /* PBXContainerItemProxy */;
+		};
+		09BC78F5282F619D0085AC07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BC78D8282F619B0085AC07 /* HandOff1.0 */;
+			targetProxy = 09BC78F4282F619D0085AC07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09BC78FB282F619D0085AC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09BC78FC282F619D0085AC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09BC78FE282F619D0085AC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandOff1.0/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09BC78FF282F619D0085AC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HandOff1.0/Preview Content\"";
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09BC7901282F619D0085AC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandOff1.0.app/HandOff1.0";
+			};
+			name = Debug;
+		};
+		09BC7902282F619D0085AC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandOff1.0.app/HandOff1.0";
+			};
+			name = Release;
+		};
+		09BC7904282F619D0085AC07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandOff1.0;
+			};
+			name = Debug;
+		};
+		09BC7905282F619D0085AC07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W59W3QVKXJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nuralab.HandOff1-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandOff1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09BC78D4282F619B0085AC07 /* Build configuration list for PBXProject "HandOff1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BC78FB282F619D0085AC07 /* Debug */,
+				09BC78FC282F619D0085AC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BC78FD282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BC78FE282F619D0085AC07 /* Debug */,
+				09BC78FF282F619D0085AC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BC7900282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BC7901282F619D0085AC07 /* Debug */,
+				09BC7902282F619D0085AC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BC7903282F619D0085AC07 /* Build configuration list for PBXNativeTarget "HandOff1.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BC7904282F619D0085AC07 /* Debug */,
+				09BC7905282F619D0085AC07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09BC78D1282F619B0085AC07 /* Project object */;
+}
