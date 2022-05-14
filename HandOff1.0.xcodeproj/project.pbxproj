@@ -18,6 +18,8 @@
 		09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC790C28301A8E0085AC07 /* Extensions.swift */; };
 		09BC790F28301F520085AC07 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC790E28301F520085AC07 /* FeedView.swift */; };
 		09BC7911283027E30085AC07 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7910283027E30085AC07 /* PostView.swift */; };
+		09BC79142830334A0085AC07 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7913283033490085AC07 /* PostModel.swift */; };
+		09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC791528306A770085AC07 /* PostArrayObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		09BC790C28301A8E0085AC07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		09BC790E28301F520085AC07 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		09BC7910283027E30085AC07 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		09BC7913283033490085AC07 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		09BC791528306A770085AC07 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		09BC78DB282F619B0085AC07 /* HandOff1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				09BC7912283033270085AC07 /* Model */,
 				09BC790B28301A780085AC07 /* Helpers */,
 				09BC7908283016BC0085AC07 /* Views */,
 				09BC78E0282F619D0085AC07 /* Assets.xcassets */,
@@ -169,6 +174,15 @@
 				09BC790C28301A8E0085AC07 /* Extensions.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		09BC7912283033270085AC07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09BC7913283033490085AC07 /* PostModel.swift */,
+				09BC791528306A770085AC07 /* PostArrayObject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,8 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BC790F28301F520085AC07 /* FeedView.swift in Sources */,
+				09BC79142830334A0085AC07 /* PostModel.swift in Sources */,
 				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
 				09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */,
+				09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */,
 				09BC7911283027E30085AC07 /* PostView.swift in Sources */,
 				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
 			);
