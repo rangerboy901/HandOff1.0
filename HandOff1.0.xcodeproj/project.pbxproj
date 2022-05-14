@@ -14,6 +14,10 @@
 		09BC78EE282F619D0085AC07 /* HandOff1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78ED282F619D0085AC07 /* HandOff1_0Tests.swift */; };
 		09BC78F8282F619D0085AC07 /* HandOff1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78F7282F619D0085AC07 /* HandOff1_0UITests.swift */; };
 		09BC78FA282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */; };
+		09BC790728300E900085AC07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BC790628300E900085AC07 /* LaunchScreen.storyboard */; };
+		09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC790C28301A8E0085AC07 /* Extensions.swift */; };
+		09BC790F28301F520085AC07 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC790E28301F520085AC07 /* FeedView.swift */; };
+		09BC7911283027E30085AC07 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7910283027E30085AC07 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		09BC78F3282F619D0085AC07 /* HandOff1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandOff1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BC78F7282F619D0085AC07 /* HandOff1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0UITests.swift; sourceTree = "<group>"; };
 		09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandOff1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09BC790628300E900085AC07 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09BC790C28301A8E0085AC07 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		09BC790E28301F520085AC07 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		09BC7910283027E30085AC07 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,11 @@
 		09BC78DB282F619B0085AC07 /* HandOff1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				09BC78DC282F619B0085AC07 /* HandOff1_0App.swift */,
-				09BC78DE282F619B0085AC07 /* ContentView.swift */,
+				09BC790B28301A780085AC07 /* Helpers */,
+				09BC7908283016BC0085AC07 /* Views */,
 				09BC78E0282F619D0085AC07 /* Assets.xcassets */,
 				09BC78E2282F619D0085AC07 /* Preview Content */,
+				09BC790628300E900085AC07 /* LaunchScreen.storyboard */,
 			);
 			path = HandOff1.0;
 			sourceTree = "<group>";
@@ -125,6 +134,41 @@
 				09BC78F9282F619D0085AC07 /* HandOff1_0UITestsLaunchTests.swift */,
 			);
 			path = HandOff1.0UITests;
+			sourceTree = "<group>";
+		};
+		09BC7908283016BC0085AC07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09BC7909283016C70085AC07 /* Subviews */,
+				09BC790A283016D60085AC07 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09BC7909283016C70085AC07 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				09BC7910283027E30085AC07 /* PostView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		09BC790A283016D60085AC07 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				09BC78DC282F619B0085AC07 /* HandOff1_0App.swift */,
+				09BC78DE282F619B0085AC07 /* ContentView.swift */,
+				09BC790E28301F520085AC07 /* FeedView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		09BC790B28301A780085AC07 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09BC790C28301A8E0085AC07 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BC790728300E900085AC07 /* LaunchScreen.storyboard in Resources */,
 				09BC78E4282F619D0085AC07 /* Preview Assets.xcassets in Resources */,
 				09BC78E1282F619D0085AC07 /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BC790F28301F520085AC07 /* FeedView.swift in Sources */,
 				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
+				09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */,
+				09BC7911283027E30085AC07 /* PostView.swift in Sources */,
 				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HandOff1.0/Preview Content\"";
@@ -423,8 +472,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,7 +486,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HandOff1.0/Preview Content\"";
@@ -452,8 +505,11 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
