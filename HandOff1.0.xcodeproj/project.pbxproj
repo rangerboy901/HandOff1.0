@@ -21,6 +21,8 @@
 		09BC79142830334A0085AC07 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7913283033490085AC07 /* PostModel.swift */; };
 		09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC791528306A770085AC07 /* PostArrayObject.swift */; };
 		09BC7918283071C30085AC07 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7917283071C30085AC07 /* CommentView.swift */; };
+		09BC791A283173FA0085AC07 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC7919283173FA0085AC07 /* MessageView.swift */; };
+		09BC791C283175550085AC07 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC791B283175550085AC07 /* CommentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		09BC7913283033490085AC07 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		09BC791528306A770085AC07 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
 		09BC7917283071C30085AC07 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		09BC7919283173FA0085AC07 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		09BC791B283175550085AC07 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				09BC78DE282F619B0085AC07 /* ContentView.swift */,
 				09BC790E28301F520085AC07 /* FeedView.swift */,
 				09BC7917283071C30085AC07 /* CommentView.swift */,
+				09BC7919283173FA0085AC07 /* MessageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			children = (
 				09BC7913283033490085AC07 /* PostModel.swift */,
 				09BC791528306A770085AC07 /* PostArrayObject.swift */,
+				09BC791B283175550085AC07 /* CommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				09BC790F28301F520085AC07 /* FeedView.swift in Sources */,
 				09BC79142830334A0085AC07 /* PostModel.swift in Sources */,
 				09BC7918283071C30085AC07 /* CommentView.swift in Sources */,
+				09BC791A283173FA0085AC07 /* MessageView.swift in Sources */,
 				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
 				09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */,
 				09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */,
+				09BC791C283175550085AC07 /* CommentModel.swift in Sources */,
 				09BC7911283027E30085AC07 /* PostView.swift in Sources */,
 				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
 			);

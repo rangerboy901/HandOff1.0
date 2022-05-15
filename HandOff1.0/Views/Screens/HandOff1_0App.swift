@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct HandOff1_0App: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+      
+            WindowGroup {
+                ContentView()
+            }
         }
     }
-}
+

@@ -10,16 +10,17 @@ import SwiftUI
 struct CommentView: View {
     
     @State var submissionText: String = ""
+    @State var commentArray = [CommentModel]()
     
     var body: some View {
         VStack {
             
             ScrollView {
-                
-                Text("PlaceHolder")
-                Text("PlaceHolder")
-                Text("PlaceHolder")
-                Text("PlaceHolder")
+                LazyVStack{
+                    ForEach(commentArray, id: \.self) { comment in
+                        MessageView(comment: comment)
+                    }
+                }
                 
             }
             
@@ -46,9 +47,31 @@ struct CommentView: View {
         }
         .navigationTitle("Comments")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear(perform: {
+            getComments()
+            
+        })
     }
+    //JWD: FUNCTIONS
+    
+    func getComments()  {
+    
+    print("get comments from database")
+        
+        let comment1 = CommentModel(commentID: "", userID: "", userName: "Joe w", content: "This is the first comment", dateCreated: Date())
+        let comment2 = CommentModel(commentID: "", userID: "", userName: "Dakota", content: "This is the second comment", dateCreated: Date())
+        let comment3 = CommentModel(commentID: "", userID: "", userName: "Remington", content: "This is the third comment", dateCreated: Date())
+        let comment4 = CommentModel(commentID: "", userID: "", userName: "Montana", content: "This is the fourth comment", dateCreated: Date())
+        let comment5 = CommentModel(commentID: "", userID: "", userName: "Cooper", content: "This is the fifth comment", dateCreated: Date())
+        
+        self.commentArray.append(comment1)
+        self.commentArray.append(comment2)
+        self.commentArray.append(comment3)
+        self.commentArray.append(comment4)
+        self.commentArray.append(comment5)
+        
 }
-
+}
 struct CommentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
