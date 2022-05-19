@@ -23,7 +23,7 @@ struct ContentView: View {
                     Text("Browse")
                     Image(systemName: "magnifyingglass")
         
-                         }
+        }
             Text("Screen3")
                 .tabItem{
                     Text("Upload")
