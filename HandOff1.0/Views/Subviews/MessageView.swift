@@ -13,7 +13,7 @@ struct MessageView: View {
     
     var body: some View {
         HStack {
-            
+          //JWD: PROFILE IMAGE 
             Image("dog1")
                 .resizable()
                 .scaledToFill()
@@ -30,7 +30,7 @@ struct MessageView: View {
                     .padding(.all, 10)
                     .foregroundColor(.primary)
                     .background(Color.gray)
-                cornerRadius(10)
+                    .cornerRadius(10)
                 
             })
             Spacer(minLength: 0)

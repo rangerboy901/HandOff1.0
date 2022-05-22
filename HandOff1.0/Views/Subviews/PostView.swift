@@ -10,12 +10,14 @@ import SwiftUI
 struct PostView: View {
     
     @State var post: PostModel
+    var showHeaderAndFooter: Bool
     
     
     var body: some View {
         VStack(alignment: .center, spacing: 0, content:  {
             
             // JWD: HEADER
+            if showHeaderAndFooter {
             HStack{
                 Image("dog1")
                     .resizable()
@@ -35,14 +37,16 @@ struct PostView: View {
                 
             }
             .padding(.all, 6)
-            
+                
+            }
             // JWD: IMAGE
             
             Image("dog1")
                 .resizable()
                 .scaledToFit()
-            // JWD: FOOTER
             
+            // JWD: FOOTER
+            if showHeaderAndFooter {
             HStack(alignment: .center, spacing: 20, content: {
                 
                 Image(systemName: "heart")
@@ -76,16 +80,18 @@ struct PostView: View {
                 }
                 .padding(.all, 6)
             }
+            }
             
         })
     }
 }
+               
 struct PostView_Previews: PreviewProvider {
     
     static var post: PostModel = PostModel (postID: "", userID: "", username: "Joe DeWeese", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post)
+        PostView(post: post, showHeaderAndFooter: false)
             .previewLayout(.sizeThatFits)
     }
 }

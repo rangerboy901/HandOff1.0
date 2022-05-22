@@ -11,14 +11,15 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                FeedView(posts: PostArrayObject())
+                FeedView(posts: PostArrayObject(), title: "MyFeed")
             }
                 .tabItem {
                     Text("Feed")
                     Image(systemName: "book.fill")
                 }
-            
-            Text("Screen2")
+            NavigationView {
+           BrowseView()
+            }
                 .tabItem{
                     Text("Browse")
                     Image(systemName: "magnifyingglass")
