@@ -29,6 +29,8 @@
 		09D498922834898D0023E54E /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D498912834898D0023E54E /* CarouselView.swift */; };
 		09D498942835F02A0023E54E /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D498932835F02A0023E54E /* ImageGridView.swift */; };
 		53663144283F1C6B0062AE70 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53663143283F1C6B0062AE70 /* PostImageView.swift */; };
+		536631462840C9FE0062AE70 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631452840C9FE0062AE70 /* ProfileView.swift */; };
+		536631482840CB920062AE70 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631472840CB920062AE70 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		09D498912834898D0023E54E /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		09D498932835F02A0023E54E /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		53663143283F1C6B0062AE70 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
+		536631452840C9FE0062AE70 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		536631472840CB920062AE70 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,7 @@
 				09BC7910283027E30085AC07 /* PostView.swift */,
 				09D498932835F02A0023E54E /* ImageGridView.swift */,
 				09C46987283DCD3000228E45 /* ImagePicker.swift */,
+				536631472840CB920062AE70 /* ProfileHeaderView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				09D4988F283488810023E54E /* BrowseView.swift */,
 				09C46985283C6FEA00228E45 /* UploadView.swift */,
 				53663143283F1C6B0062AE70 /* PostImageView.swift */,
+				536631452840C9FE0062AE70 /* ProfileView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -352,9 +358,11 @@
 				09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */,
 				09D498942835F02A0023E54E /* ImageGridView.swift in Sources */,
 				09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */,
+				536631462840C9FE0062AE70 /* ProfileView.swift in Sources */,
 				09D49890283488810023E54E /* BrowseView.swift in Sources */,
 				09BC791C283175550085AC07 /* CommentModel.swift in Sources */,
 				09BC7911283027E30085AC07 /* PostView.swift in Sources */,
+				536631482840CB920062AE70 /* ProfileHeaderView.swift in Sources */,
 				09C46986283C6FEA00228E45 /* UploadView.swift in Sources */,
 				09C46988283DCD3000228E45 /* ImagePicker.swift in Sources */,
 				09D498922834898D0023E54E /* CarouselView.swift in Sources */,
