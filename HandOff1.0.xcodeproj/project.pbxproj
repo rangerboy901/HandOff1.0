@@ -31,6 +31,10 @@
 		53663144283F1C6B0062AE70 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53663143283F1C6B0062AE70 /* PostImageView.swift */; };
 		536631462840C9FE0062AE70 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631452840C9FE0062AE70 /* ProfileView.swift */; };
 		536631482840CB920062AE70 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631472840CB920062AE70 /* ProfileHeaderView.swift */; };
+		5366314A284126860062AE70 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53663149284126860062AE70 /* SettingsView.swift */; };
+		5366314C28412B0D0062AE70 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366314B28412B0D0062AE70 /* SettingsLabelView.swift */; };
+		5366314E284139360062AE70 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366314D284139360062AE70 /* SettingsRowView.swift */; };
+		53663150284152FD0062AE70 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366314F284152FD0062AE70 /* SettingsEditTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,10 @@
 		53663143283F1C6B0062AE70 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 		536631452840C9FE0062AE70 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		536631472840CB920062AE70 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		53663149284126860062AE70 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5366314B28412B0D0062AE70 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		5366314D284139360062AE70 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		5366314F284152FD0062AE70 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +189,8 @@
 				09D498932835F02A0023E54E /* ImageGridView.swift */,
 				09C46987283DCD3000228E45 /* ImagePicker.swift */,
 				536631472840CB920062AE70 /* ProfileHeaderView.swift */,
+				5366314B28412B0D0062AE70 /* SettingsLabelView.swift */,
+				5366314D284139360062AE70 /* SettingsRowView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -196,6 +206,8 @@
 				09C46985283C6FEA00228E45 /* UploadView.swift */,
 				53663143283F1C6B0062AE70 /* PostImageView.swift */,
 				536631452840C9FE0062AE70 /* ProfileView.swift */,
+				53663149284126860062AE70 /* SettingsView.swift */,
+				5366314F284152FD0062AE70 /* SettingsEditTextView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -351,6 +363,7 @@
 			files = (
 				09BC790F28301F520085AC07 /* FeedView.swift in Sources */,
 				09BC79142830334A0085AC07 /* PostModel.swift in Sources */,
+				5366314C28412B0D0062AE70 /* SettingsLabelView.swift in Sources */,
 				53663144283F1C6B0062AE70 /* PostImageView.swift in Sources */,
 				09BC7918283071C30085AC07 /* CommentView.swift in Sources */,
 				09BC791A283173FA0085AC07 /* MessageView.swift in Sources */,
@@ -367,6 +380,9 @@
 				09C46988283DCD3000228E45 /* ImagePicker.swift in Sources */,
 				09D498922834898D0023E54E /* CarouselView.swift in Sources */,
 				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
+				5366314A284126860062AE70 /* SettingsView.swift in Sources */,
+				53663150284152FD0062AE70 /* SettingsEditTextView.swift in Sources */,
+				5366314E284139360062AE70 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

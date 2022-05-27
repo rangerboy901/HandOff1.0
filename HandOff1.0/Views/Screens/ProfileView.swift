@@ -8,23 +8,35 @@
 import SwiftUI
 
 struct ProfileView: View {
+    //JWD:  PROPERTIES
+    var isMyProfile: Bool
+    @State var profileDisplayName: String
+    var profileUserID: String
+    
+    var posts = PostArrayObject()
+    
+    
     var body: some View {
         ScrollView (.vertical, showsIndicators: false, content: {
             
-            ProfileHeaderView()
+            ProfileHeaderView(profileDisplayName: $profileDisplayName)
+            Divider()
+               
+            ImageGridView(posts: posts)
         })
-        .navigationTitle("Profile")
+        .navigationTitle("My Profile")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
                                 Button(action: {}, label: { Image(systemName: "line.horizontal.3")
         })
                                     .accentColor(Color.MyTheme.blueColor)
+                                    .opacity(isMyProfile ? 1.0 : 0.00)
         )
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(isMyProfile: true, profileDisplayName: "Joe", profileUserID: "")
     }
 }

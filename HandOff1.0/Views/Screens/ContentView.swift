@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    //JWD:  PROPERTIES
+    
+    
     var body: some View {
+       
+        
         TabView {
             NavigationView {
                 FeedView(posts: PostArrayObject(), title: "MyFeed")
@@ -31,11 +36,16 @@ struct ContentView: View {
                     Image(systemName: "square.and.arrow.up.fill")
                     
         }
-            Text("Screen4")
+            NavigationView {
+                
+                ProfileView(isMyProfile: true, profileDisplayName: "My Profile", profileUserID: "")
+            }
                 .tabItem{
-                    Image(systemName: "person.fill")
                     Text("Profile")
+                    Image(systemName: "person.fill")
+                   
         }
+           
     }
         .accentColor(Color.MyTheme.blueColor)
 }

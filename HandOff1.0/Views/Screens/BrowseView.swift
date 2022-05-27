@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BrowseView: View {
-    
+    //JWD:  PROPERTIES
     var posts = PostArrayObject()
     
     var body: some View {

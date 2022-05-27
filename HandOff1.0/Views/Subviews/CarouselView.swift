@@ -42,7 +42,7 @@ struct CarouselView: View {
     func addTimer() {
         
         timerAdded = true
-        let timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { (timer) in
+        let timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { (timer) in
            
             if selection == (maxCount - 1) {
                 selection = 1

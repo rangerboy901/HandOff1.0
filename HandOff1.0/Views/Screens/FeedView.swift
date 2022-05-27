@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FeedView: View {
+    //JWD:  PROPERTIES
     
     @ObservedObject var posts: PostArrayObject
     var title: String

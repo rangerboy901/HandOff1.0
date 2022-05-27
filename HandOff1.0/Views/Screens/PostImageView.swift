@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PostImageView: View {
-    
+    //JWD:  PROPERTIES
     @Environment(\.presentationMode) var presentationMode
     @State var captionText: String = ""
     @Binding var imageSelected: UIImage

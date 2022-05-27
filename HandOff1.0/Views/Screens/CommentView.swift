@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CommentView: View {
+    //JWD:  PROPERTIES
     
     @State var submissionText: String = ""
     @State var commentArray = [CommentModel]()

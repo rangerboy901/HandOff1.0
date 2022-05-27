@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     
+    @Binding var profileDisplayName: String
+    
     
     var body: some View {
         VStack(alignment: .center, spacing: 10, content: {
@@ -19,11 +21,11 @@ struct ProfileHeaderView: View {
                 .frame(width: 120, height: 120, alignment: .center)
                 .cornerRadius(60)
             
-            Text("USER NAME HERE")
+            Text(profileDisplayName)
                 .font(.largeTitle)
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
-            Text("THIS IS WHERE THE USER CAN ADD HIS/HER BIO")
+            Text("THIS IS WHERE THE USER CAN ADD HIS/HER BIO TO SAY SOMETHING VERY PROFOUND")
             
             HStack(alignment: .center, spacing: 20, content: {
                 // JWD: POSTS
@@ -60,8 +62,11 @@ struct ProfileHeaderView: View {
 }
 }
 struct ProfileHeaderView_Previews: PreviewProvider {
+    
+    @State static var name: String = "Joe "
+    
     static var previews: some View {
-        ProfileHeaderView()
+        ProfileHeaderView(profileDisplayName: $name)
             .previewLayout(.sizeThatFits)
     }
 }

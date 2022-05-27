@@ -24,5 +24,11 @@ extension Color {
         static var beigeColor: Color {
             return Color("ColorBeige")
         }
+        static var brightOrangeColor: Color {
+            return Color("ColorBrightOrange")
+        }
+        static var yellowColor: Color {
+            return Color("ColorYellow")
+        }
     }
 }

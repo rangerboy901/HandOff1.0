@@ -19,16 +19,21 @@ struct PostView: View {
             // JWD: HEADER
             if showHeaderAndFooter {
             HStack{
-                Image("dog1")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .cornerRadius(15)
                 
-                Text(post.username)
-                    .font(.callout)
-                    .fontWeight(.medium)
-                    .foregroundColor(.primary)
+                NavigationLink(
+                    destination: ProfileView(isMyProfile: false, profileDisplayName: post.username, profileUserID: post.userID),
+                    label: {
+                    Image("dog1")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .cornerRadius(15)
+                    
+                    Text(post.username)
+                        .font(.callout)
+                        .fontWeight(.medium)
+                        .foregroundColor(.primary)
+                })
                 
                 Spacer()
                 
@@ -91,7 +96,7 @@ struct PostView_Previews: PreviewProvider {
     static var post: PostModel = PostModel (postID: "", userID: "", username: "Joe DeWeese", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
     
     static var previews: some View {
-        PostView(post: post, showHeaderAndFooter: false)
+        PostView(post: post, showHeaderAndFooter: true)
             .previewLayout(.sizeThatFits)
     }
 }
