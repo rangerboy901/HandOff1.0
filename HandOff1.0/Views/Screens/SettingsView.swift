@@ -33,13 +33,15 @@ struct SettingsView: View {
             GroupBox(label: SettingsLabelView(labelText: "Profile", labelImage: "person.fill")  , content: {
                 
                 NavigationLink(
-                    destination: {
-                        Text("Destination")
-                    },
+                    destination: SettingsEditTextView(submissionText: "Current Display Name", title: "Display Name", description: "You can edit your display name here.  This will be seen by other users on your profile and on your posts!", placeholder: "Your display name here..."),
                     label: {
                         SettingsRowView(leftIcon: "pencil", text: "Display Name", color: Color.MyTheme.orangeColor)
                     })
-                SettingsRowView(leftIcon: "text.quote", text: "Personal Bio", color: Color.MyTheme.orangeColor)
+                NavigationLink(
+                    destination: SettingsEditTextView(submissionText: "Write your Bio here...", title: "Profile Bio", description: "Declare your personal creed", placeholder: "Your bio here..."),
+                 label: {
+                    SettingsRowView(leftIcon: "text.quote", text: "Personal Bio", color: Color.MyTheme.orangeColor)
+                })
                 SettingsRowView(leftIcon: "photo", text: "Profile Picture", color: Color.MyTheme.orangeColor)
                 SettingsRowView(leftIcon: "lock.fill", text: "Security and Privacy", color: Color.MyTheme.orangeColor)
                 SettingsRowView(leftIcon: "pencil", text: "Placeholder", color: Color.MyTheme.orangeColor)
