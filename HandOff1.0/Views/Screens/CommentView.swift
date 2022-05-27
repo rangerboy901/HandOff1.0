@@ -32,7 +32,7 @@ struct CommentView: View {
                     .frame(width: 40, height: 40, alignment: .center)
                     .cornerRadius(20)
                 
-                TextField("Add a comment here...", text: $submissionText)
+                TextField("Remark spot...", text: $submissionText)
                 
                 Button(action: {
                     

@@ -28,6 +28,7 @@
 		09D49890283488810023E54E /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D4988F283488810023E54E /* BrowseView.swift */; };
 		09D498922834898D0023E54E /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D498912834898D0023E54E /* CarouselView.swift */; };
 		09D498942835F02A0023E54E /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D498932835F02A0023E54E /* ImageGridView.swift */; };
+		53663144283F1C6B0062AE70 /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53663143283F1C6B0062AE70 /* PostImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		09D4988F283488810023E54E /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		09D498912834898D0023E54E /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		09D498932835F02A0023E54E /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		53663143283F1C6B0062AE70 /* PostImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				09BC7917283071C30085AC07 /* CommentView.swift */,
 				09D4988F283488810023E54E /* BrowseView.swift */,
 				09C46985283C6FEA00228E45 /* UploadView.swift */,
+				53663143283F1C6B0062AE70 /* PostImageView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				09BC790F28301F520085AC07 /* FeedView.swift in Sources */,
 				09BC79142830334A0085AC07 /* PostModel.swift in Sources */,
+				53663144283F1C6B0062AE70 /* PostImageView.swift in Sources */,
 				09BC7918283071C30085AC07 /* CommentView.swift in Sources */,
 				09BC791A283173FA0085AC07 /* MessageView.swift in Sources */,
 				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
