@@ -22,13 +22,13 @@ struct SettingsEditTextView: View {
                 Text(description)
                 Spacer(minLength: 0)
             }
-           
+            
             
             TextField(placeholder, text: $submissionText)
                 .padding()
                 .frame(height: 60)
                 .frame(maxWidth: .infinity)
-                .background(Color.MyTheme.beigeColor)
+                .background(Color.gray)
                 .cornerRadius(12)
                 .font(.headline)
                 .autocapitalization(.sentences)
@@ -42,10 +42,10 @@ struct SettingsEditTextView: View {
                     .padding()
                     .frame(height:60)
                     .frame(maxWidth: .infinity)
-                    .background(Color.MyTheme.blueColor)
+                    .background(Color.MyTheme.orangeColor)
                     .cornerRadius(12)
             })
-
+            
             
             Spacer()
             

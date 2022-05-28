@@ -12,6 +12,7 @@ struct ProfileView: View {
     var isMyProfile: Bool
     @State var profileDisplayName: String
     var profileUserID: String
+    @State var showSettings: Bool = false
     
     var posts = PostArrayObject()
     
@@ -21,17 +22,24 @@ struct ProfileView: View {
             
             ProfileHeaderView(profileDisplayName: $profileDisplayName)
             Divider()
-               
+            
             ImageGridView(posts: posts)
         })
         .navigationTitle("My Profile")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(trailing:
-                                Button(action: {}, label: { Image(systemName: "line.horizontal.3")
+                                Button(action: {
+            showSettings.toggle()
+            
+        },
+                                       label: { Image(systemName: "line.horizontal.3")
         })
                                     .accentColor(Color.MyTheme.blueColor)
                                     .opacity(isMyProfile ? 1.0 : 0.00)
         )
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
+        }
     }
 }
 
