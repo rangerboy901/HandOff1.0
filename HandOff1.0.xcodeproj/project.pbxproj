@@ -37,6 +37,8 @@
 		53663150284152FD0062AE70 /* SettingsEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366314F284152FD0062AE70 /* SettingsEditTextView.swift */; };
 		5366315228418A4F0062AE70 /* SettingsEditImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366315128418A4F0062AE70 /* SettingsEditImageView.swift */; };
 		5366315428419C8B0062AE70 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366315328419C8B0062AE70 /* SignUpView.swift */; };
+		536631562842BBB20062AE70 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631552842BBB20062AE70 /* OnboardingView.swift */; };
+		536631582842BF3F0062AE70 /* SigninWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536631572842BF3F0062AE70 /* SigninWithAppleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		5366314F284152FD0062AE70 /* SettingsEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditTextView.swift; sourceTree = "<group>"; };
 		5366315128418A4F0062AE70 /* SettingsEditImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEditImageView.swift; sourceTree = "<group>"; };
 		5366315328419C8B0062AE70 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		536631552842BBB20062AE70 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		536631572842BF3F0062AE70 /* SigninWithAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithAppleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,7 @@
 				536631472840CB920062AE70 /* ProfileHeaderView.swift */,
 				5366314B28412B0D0062AE70 /* SettingsLabelView.swift */,
 				5366314D284139360062AE70 /* SettingsRowView.swift */,
+				536631572842BF3F0062AE70 /* SigninWithAppleButtonView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				5366314F284152FD0062AE70 /* SettingsEditTextView.swift */,
 				5366315128418A4F0062AE70 /* SettingsEditImageView.swift */,
 				5366315328419C8B0062AE70 /* SignUpView.swift */,
+				536631552842BBB20062AE70 /* OnboardingView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -376,6 +382,7 @@
 				09BC791A283173FA0085AC07 /* MessageView.swift in Sources */,
 				09BC78DF282F619B0085AC07 /* ContentView.swift in Sources */,
 				09BC790D28301A8E0085AC07 /* Extensions.swift in Sources */,
+				536631582842BF3F0062AE70 /* SigninWithAppleButtonView.swift in Sources */,
 				09D498942835F02A0023E54E /* ImageGridView.swift in Sources */,
 				09BC791628306A770085AC07 /* PostArrayObject.swift in Sources */,
 				536631462840C9FE0062AE70 /* ProfileView.swift in Sources */,
@@ -385,6 +392,7 @@
 				09BC7911283027E30085AC07 /* PostView.swift in Sources */,
 				536631482840CB920062AE70 /* ProfileHeaderView.swift in Sources */,
 				09C46986283C6FEA00228E45 /* UploadView.swift in Sources */,
+				536631562842BBB20062AE70 /* OnboardingView.swift in Sources */,
 				09C46988283DCD3000228E45 /* ImagePicker.swift in Sources */,
 				09D498922834898D0023E54E /* CarouselView.swift in Sources */,
 				09BC78DD282F619B0085AC07 /* HandOff1_0App.swift in Sources */,
