@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    //JWD:  PROPERTIES
+    @Environment(\.presentationMode) var presentationMode
+    @State var showOnboardingViewPart2: Bool = false
+    
+    
+    
     var body: some View {
         VStack {
             Image("frog-1")
@@ -26,8 +32,9 @@ struct OnboardingView: View {
                 .foregroundColor(Color.MyTheme.brightOrangeColor)
                 .padding()
             
-            
+        
             Button(action: {
+                showOnboardingViewPart2.toggle()
                 
             },label: {
                 SigninWithAppleButtonView()
@@ -36,6 +43,7 @@ struct OnboardingView: View {
                 
             })
             Button(action: {
+                showOnboardingViewPart2.toggle()
                 
             },label: {
                 HStack {
@@ -49,11 +57,27 @@ struct OnboardingView: View {
                 .font(.system(size: 25, weight: .medium, design: .default))
             })
             .accentColor(Color.white)
+            
+            Spacer()
+            
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            },
+                   label: {
+                Text("Cancel")
+                    .foregroundColor(Color.MyTheme.brightOrangeColor)
+            })
+           
+            Spacer()
+            
         }
         .padding(.all,20)
-        .ignoresSafeArea(.all)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.MyTheme.blueColor)
+        .ignoresSafeArea()
+        .fullScreenCover(isPresented: $showOnboardingViewPart2, content: {
+            OnboardingViewPart2()
+        })
     }
 }
 
