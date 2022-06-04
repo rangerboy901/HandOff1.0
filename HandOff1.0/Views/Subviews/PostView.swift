@@ -27,91 +27,103 @@ struct PostView: View {
             
             // JWD: HEADER
             if showHeaderAndFooter {
-            HStack{
-                
-                NavigationLink(
-                    destination: ProfileView(isMyProfile: false, profileDisplayName: post.username, profileUserID: post.userID),
-                    label: {
-                    Image("dog1")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 30, height: 30, alignment: .center)
-                        .cornerRadius(15)
+                HStack{
                     
-                    Text(post.username)
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.primary)
-                })
-                
-                Spacer()
-                
-                Image(systemName: "ellipsis")
-                    .font(.subheadline)
-                
-            }
-            .padding(.all, 6)
-                
+                    NavigationLink(
+                        destination: ProfileView(isMyProfile: false, profileDisplayName: post.username, profileUserID: post.userID),
+                        label: {
+                            Image("dog1")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 30, height: 30, alignment: .center)
+                                .cornerRadius(15)
+                            
+                            Text(post.username)
+                                .font(.callout)
+                                .fontWeight(.medium)
+                                .foregroundColor(.primary)
+                        })
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        showActionSheet.toggle()
+                    }, label: {
+                        Image(systemName: "ellipsis")
+                            .font(.subheadline)
+                    })
+                    .accentColor(.primary)
+                    .actionSheet(isPresented: $showActionSheet, content: {
+                        getActionSheet()
+                    })
+                }
+                .padding(.all, 6)
             }
             // JWD: IMAGE
             
             ZStack {
-                Image("dog1")
+                Image(uiImage: postImage)
                     .resizable()
-                .scaledToFit()
+                    .scaledToFit()
                 
                 if addHeartAnimationToView {
                     
-                LikeAnimationView(animate: $animateLike)
+                    LikeAnimationView(animate: $animateLike)
                     
                 }
             }
             // JWD: FOOTER
             if showHeaderAndFooter {
-            HStack(alignment: .center, spacing: 20, content: {
-                Button (action: {
-                    if post.likedByUser {
-                        unlikePost()
-                    }else {
-                        likePost()
-                    }
-                },
-                        label: {
-                    Image(systemName: post.likedByUser ? "heart.fill" : "heart")
-                        .font(.title3)
-                    
-                })
-                .accentColor(post.likedByUser ? .red : .primary)
-                
-                
-                //JWD: COMMENT ICON
-                NavigationLink(
-                    destination: CommentView(),
-                    label: {
-                        
-                        Image(systemName: "bubble.middle.bottom")
+                HStack(alignment: .center, spacing: 20, content: {
+                    Button (action: {
+                        if post.likedByUser {
+                            unlikePost()
+                        }else {
+                            likePost()
+                        }
+                    },
+                            label: {
+                        Image(systemName: post.likedByUser ? "heart.fill" : "heart")
                             .font(.title3)
-                            .foregroundColor(.primary)
                         
                     })
-              
-                Image(systemName: "paperplane")
-                    .font(.title3)
-                
-                Spacer()
-            })
-            .padding(.all, 6)
-            
-            if let caption = post.caption {
-                
-                HStack {
-                    Text(caption)
+                    .accentColor(post.likedByUser ? .red : .primary)
                     
                     
-                    Spacer(minLength: 0)
-                }
+                    //JWD: COMMENT ICON
+                    NavigationLink(
+                        destination: CommentView(),
+                        label: {
+                            
+                            Image(systemName: "bubble.middle.bottom")
+                                .font(.title3)
+                                .foregroundColor(.primary)
+                            
+                        })
+                    Button (action: {
+                        
+                        sharePost()
+                    },
+                            label: {
+                        Image(systemName: "paperplane")
+                        .font(.title3)
+                })
+                    .accentColor(.primary)
+                    
+                    Spacer()
+                })
                 .padding(.all, 6)
-            }
+                
+                if let caption = post.caption {
+                    
+                    HStack {
+                        Text(caption)
+                        
+                        
+                        Spacer(minLength: 0)
+                    }
+                    .padding(.all, 6)
+                }
             }
             
         })
@@ -137,8 +149,72 @@ struct PostView: View {
         self.post = updatePost
         
     }
+    
+    func getActionSheet() -> ActionSheet {
+        
+        switch self.actionSheetType {
+        case .general:
+            return ActionSheet(title: Text("What would you like to do?"),
+                               message: nil, buttons:[
+                                .destructive(Text("Report"), action: {
+                                    self.actionSheetType = .reporting
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                       //Delay added to create latency for system to dismiss previous state.
+                                        self.showActionSheet.toggle()
+                                    }
+                                                                 
+                                }),
+                                .default(Text("Learn more..."), action: {
+                                    print("Learn more ")
+                                }),
+                                
+                                    .cancel()
+                               ])
+        case .reporting:
+            return ActionSheet(title: Text("Why are you reporting this post?"), message: nil,
+                               buttons:[
+                                
+                                Alert.Button
+                                    .destructive(Text("Suspect account."), action: {
+                                        reportPost(reason: "Suspect Account")
+                                    }),
+                                Alert.Button
+                                    .destructive(Text("This post is inappropriate."), action: {
+                                        reportPost(reason: "This post is inappropriate.")
+                                    }),
+                                Alert.Button
+                                    .destructive(Text("This post is spam."), action: {
+                                        reportPost(reason: "This post is spam.")
+                                    }),
+                                
+                                    .cancel({
+                                        self.actionSheetType = .general
+                                    })
+                               ])
+        }
+    }
+    
+    func reportPost(reason: String) {
+        print("REPORT POST NOW")
+        
+        
+    }
+    //JWD:  Future improvement to share to other apps and return user back to the post being shared
+    func sharePost() {
+        let message = "Check out this post!"
+        let image = postImage
+        let link = URL(string:"https://www.google.com")!
+        
+        let activityViewController = UIActivityViewController(activityItems: [message,image,link], applicationActivities: nil)
+        
+        let viewController = UIApplication.shared.windows.first?.rootViewController
+        viewController?.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    
+    
+    
 }
-               
 struct PostView_Previews: PreviewProvider {
     
     static var post: PostModel = PostModel (postID: "", userID: "", username: "Joe DeWeese", caption: "This is a test caption", dateCreated: Date(), likeCount: 0, likedByUser: false)
@@ -147,4 +223,5 @@ struct PostView_Previews: PreviewProvider {
         PostView(post: post, showHeaderAndFooter: true, addHeartAnimationToView: true)
             .previewLayout(.sizeThatFits)
     }
+    
 }
