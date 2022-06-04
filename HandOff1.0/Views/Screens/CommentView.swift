@@ -41,11 +41,12 @@ struct CommentView: View {
                     Image(systemName: "paperplane.fill")
                         .font(.title2)
                 })
-                .accentColor(Color.MyTheme.blueColor)
+                .accentColor(.primary)
                 
             }
             .padding(.all, 6)
         }
+        .padding(.horizontal)
         .navigationTitle("Comments")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear(perform: {
@@ -78,5 +79,6 @@ struct CommentView_Previews: PreviewProvider {
         NavigationView {
         CommentView()
     }
+        .preferredColorScheme(.dark)
 }
 }

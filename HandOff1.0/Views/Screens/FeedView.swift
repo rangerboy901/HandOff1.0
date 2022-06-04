@@ -33,5 +33,6 @@ struct FeedView_Previews: PreviewProvider {
         NavigationView {
             FeedView(posts: PostArrayObject(), title: "Feed Test")
     }
+        .preferredColorScheme(.dark)
 }
 }
